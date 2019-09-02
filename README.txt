@@ -13,6 +13,7 @@
         {{myname}}
         {{gender}}
         {{@tag}}
+	<p>{{myname}}</p>
     </script>
     <script>
     let obj = {
@@ -21,7 +22,7 @@
         tag:"<h3>我是傻缺</h3>"
     }
 
-    let myhtml = template("module",obj);
+   let myhtml = template("module",obj);
     console.log(myhtml);
     //将渲染好的模板数据内容添加到页面容器
     .querySelector("#app").innerHTML = myhtml;
